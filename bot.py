@@ -107,9 +107,7 @@ def bag_of_words(s, words):
 
 
 class medbot:
-    def chat(inputText):
-        
-        
+    def chat(inputText): 
         # detecting language
         detectLang= translator.detect(inputText).lang
         if(detectLang=='en'):
@@ -224,7 +222,7 @@ class medbot:
 
                 else:
                     output_str = "Sorry, we are not able to resolve your queries. Try typing more relevant queries."
-                return translator.translate(output_str, src='en', dest=detectLang.lang).text
+                return translator.translate(output_str, src='en', dest=detectLang).text
 
            
 
